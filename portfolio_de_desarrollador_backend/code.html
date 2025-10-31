@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Garcete Julian - Backend Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-[#EFEFEF]">
+    <div class="relative flex min-h-screen w-full flex-col">
+        <header
+            class="sticky top-0 z-50 flex items-center justify-center border-b border-solid border-white/10 bg-background-dark/80 px-4 py-3 backdrop-blur-md">
+            <div class="flex w-full max-w-5xl items-center justify-between">
+                <div class="flex items-center gap-4 text-white">
+                    <div class="size-6 text-primary">
+                        <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 1.993C6.477 1.993 2 6.472 2 11.993c0 5.52 4.477 9.999 10 9.999s10-4.479 10-9.999c0-5.52-4.477-9.999-10-9.999zM8.5 16.493l-3-3 1.41-1.41 1.59 1.58 4.59-4.58L14.5 10.493l-6 6z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Garcete Julian</h2>
+                </div>
+                <div class="hidden items-center gap-8 md:flex">
+                    <a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors"
+                        href="#about">Acerca de</a>
+                    <a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors"
+                        href="#skills">Habilidades</a>
+                    <a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors"
+                        href="#projects">Proyectos</a>
+                    <a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors"
+                        href="#certificates">Certificados</a>
+                    <a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors"
+                        href="#contact">Contacto</a>
+                </div>
+                <a class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors"
+                    href="#contact">
+                    <span class="truncate">Contáctame</span>
+                </a>
+            </div>
+        </header>
+        <main class="flex flex-1 justify-center py-5">
+            <div class="flex w-full max-w-5xl flex-col gap-12 px-4 md:px-0">
+                <section class="py-16 sm:py-24" id="hero">
+                    <div
+                        class="flex flex-col-reverse items-center gap-10 text-center @[864px]:flex-row @[864px]:text-left md:gap-12">
+                        <div class="flex flex-col gap-6">
+                            <div class="flex flex-col gap-2">
+                                <h1
+                                    class="text-white text-4xl font-black leading-tight tracking-[-0.033em] sm:text-5xl">
+                                    Garcete Julian | Backend Developer &amp; Java Specialist
+                                </h1>
+                                <p class="text-white/80 text-base font-normal leading-normal sm:text-lg">
+                                    Construyendo soluciones robustas y escalables con Java, Spring Boot, y tecnologías
+                                    de bases de datos de vanguardia. Apasionado por resolver problemas complejos y crear
+                                    aplicaciones de alto rendimiento.
+                                </p>
+                            </div>
+                            <div class="flex-wrap gap-3 flex justify-center @[864px]:justify-start">
+                                <a class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors"
+                                    href="#projects">
+                                    <span class="truncate">Ver Proyectos</span>
+                                </a>
+                                <a class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-white/10 text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-white/20 transition-colors"
+                                    href="docs/Julian-Garcete-cv.pdf"
+                                    download="Julian-Garcete-cv">
+                                    <span class="truncate">Descargar CV</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-48 h-48 sm:w-64 sm:h-64 flex-shrink-0 bg-center bg-no-repeat bg-cover rounded-full"
+                            data-alt="Professional headshot of Alejandro Gómez, a backend developer."
+                            style="background-image: url('img/foto_perfil.jpeg');">
+                        </div>
+                    </div>
+                </section>
+                <section class="scroll-mt-20" id="about">
+                    <h2
+                        class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 border-b border-white/10 mb-6">
+                        Acerca de Mí</h2>
+                    <div class="flex p-4">
+                        <p class="text-white/80 text-base font-normal leading-relaxed">
+                            Soy un desarrollador Backend con sólida experiencia en la creación de aplicaciones
+                            eficientes utilizando Java y Spring Boot. Tengo un profundo conocimiento en el diseño y la
+                            gestión de bases de datos relacionales como MySQL y PostgreSQL. Mi conjunto de herramientas
+                            incluye Postman para pruebas de API, Docker para la contenedorización y Git para el control
+                            de versiones. Siempre estoy buscando proyectos desafiantes que me permitan crecer
+                            profesionalmente y aportar valor significativo.
+                        </p>
+                    </div>
+                </section>
+                <section class="scroll-mt-20" id="skills">
+                    <h2
+                        class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 border-b border-white/10 mb-6">
+                        Habilidades</h2>
+                    <div class="grid grid-cols-2 gap-6 p-4 sm:grid-cols-3 md:grid-cols-4">
+                        <div class="flex flex-col gap-3">
+                            <h3 class="font-bold text-white">Lenguajes</h3>
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-white/80">Java</li>
+                                <li class="text-white/80">Python</li>
+                                <li class="text-white/80">SQL</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <h3 class="font-bold text-white">Frameworks</h3>
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-white/80">Spring Boot</li>
+                                <li class="text-white/80">Hibernate</li>
+                                <li class="text-white/80">JUnit</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <h3 class="font-bold text-white">Bases de Datos</h3>
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-white/80">MySQL</li>
+                                <li class="text-white/80">PostgreSQL</li>
+                                <li class="text-white/80">MongoDB</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <h3 class="font-bold text-white">Herramientas y DevOps</h3>
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-white/80">Git &amp; GitHub</li>
+                                <li class="text-white/80">Docker</li>
+                                <li class="text-white/80">Jenkins</li>
+                                <li class="text-white/80">Postman</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="scroll-mt-20" id="projects">
+                    <h2
+                        class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 border-b border-white/10 mb-6">
+                        Proyectos</h2>
+                    <div class="grid grid-cols-1 gap-6 p-4 md:grid-cols-2">
+                        <div
+                            class="flex flex-col gap-4 rounded-lg bg-white/5 p-6 transition-all hover:bg-white/10 hover:shadow-lg">
+                            <h3 class="text-xl font-bold text-white">API de Gestión de E-commerce</h3>
+                            <p class="text-white/80 text-sm">Una API RESTful robusta para gestionar productos, pedidos y
+                                usuarios de una plataforma de comercio electrónico. Implementada con arquitectura de
+                                microservicios.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Java</span>
+                                <span
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Spring
+                                    Boot</span>
+                                <span
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">PostgreSQL</span>
+                                <span
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Docker</span>
+                            </div>
+                            <div class="mt-auto flex items-center gap-4 pt-4">
+                                <a class="text-primary hover:underline text-sm font-bold flex items-center gap-1"
+                                    href="#">GitHub <span
+                                        class="material-symbols-outlined text-base">arrow_forward</span></a>
+                                <a class="text-primary hover:underline text-sm font-bold flex items-center gap-1"
+                                    href="#">Demo <span
+                                        class="material-symbols-outlined text-base">arrow_forward</span></a>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-col gap-4 rounded-lg bg-white/5 p-6 transition-all hover:bg-white/10 hover:shadow-lg">
+                            <h3 class="text-xl font-bold text-white">Sistema de Autenticación</h3>
+                            <p class="text-white/80 text-sm">Servicio centralizado de autenticación y autorización
+                                utilizando JWT (JSON Web Tokens) para proteger múltiples aplicaciones.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Java</span>
+                                <span
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Spring
+                                    Security</span>
+                                <span
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">MySQL</span>
+                            </div>
+                            <div class="mt-auto flex items-center gap-4 pt-4">
+                                <a class="text-primary hover:underline text-sm font-bold flex items-center gap-1"
+                                    href="#">GitHub <span
+                                        class="material-symbols-outlined text-base">arrow_forward</span></a>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-col gap-4 rounded-lg bg-white/5 p-6 transition-all hover:bg-white/10 hover:shadow-lg">
+                            <h3 class="text-xl font-bold text-white">Procesador de Datos en Lotes</h3>
+                            <p class="text-white/80 text-sm">Aplicación para procesar grandes volúmenes de datos desde
+                                archivos CSV, validarlos y cargarlos en una base de datos de forma eficiente.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Java</span>
+                                <span
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Spring
+                                    Batch</span>
+                                <span
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Jenkins</span>
+                            </div>
+                            <div class="mt-auto flex items-center gap-4 pt-4">
+                                <a class="text-primary hover:underline text-sm font-bold flex items-center gap-1"
+                                    href="#">GitHub <span
+                                        class="material-symbols-outlined text-base">arrow_forward</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="scroll-mt-20" id="certificates">
+                    <h2
+                        class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 border-b border-white/10 mb-6">
+                        Certificados</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
+                        <div class="group relative overflow-hidden rounded-lg">
+                            <img alt="Certificado Oracle Certified Professional, Java SE 11 Developer"
+                                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPuirVtaY72BZKJEhaGwohAzq3NK5O8KKcb_V_RZWIdKpvEfrp45oK387Uurp4fsscZEFJ8m8mk-uox5mI8jhCrrrMP6ghUeRR6DwKJtU6FV6XfDS_qAHUame2sTBfdfk2plpNpCfJbMCU69BDWxFKfoCiDSPOtPOFqs28NFAQyKbE230d76e_a619RIGQbVp7CnNAPNgIkquaw3tAgb2j5ohCKoFMfqrAO-o_HveV4zwn-D8QLe1r1KdGvDuvNUIWPhbEeSPI5l0" />
+                            <div
+                                class="absolute inset-0 bg-black/70 flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <h3 class="text-white font-bold text-lg text-center">Oracle Certified Professional, Java
+                                    SE 11 Developer</h3>
+                                <p class="text-white/80 text-sm">Oracle</p>
+                                <a class="mt-4 text-primary hover:underline text-sm font-bold flex items-center gap-1"
+                                    href="#">
+                                    Ver Credencial <span class="material-symbols-outlined text-base">open_in_new</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden rounded-lg">
+                            <img alt="Certificado AWS Certified Solutions Architect – Associate"
+                                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTpR3R0XQ6l2-xqnxZZsKCVqP2DbAu6xrDOZPOpJkC7j59Ef-VwyKylZ-kl8NqP8YovxamKwXqROoUXTph5ubISorcReuMgXr2DrR0hwjzuozwwmr2NKL2-LKzKi83v1RA7VGoFemwn378mj9AeqWAqYu2UD_fVdAEv9qmyXuK_gJz9bjV52qwf1d9rqhoc_C92zE2IeMRgqsCmPRfkqJnwHseQV1PKF-m003kJaGJMg-IXjWRsesoJ7Vm3oJ7ChHWST_yhnuS6jc" />
+                            <div
+                                class="absolute inset-0 bg-black/70 flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <h3 class="text-white font-bold text-lg text-center">AWS Certified Solutions Architect –
+                                    Associate</h3>
+                                <p class="text-white/80 text-sm">Amazon Web Services</p>
+                                <a class="mt-4 text-primary hover:underline text-sm font-bold flex items-center gap-1"
+                                    href="#">
+                                    Ver Credencial <span class="material-symbols-outlined text-base">open_in_new</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="group relative overflow-hidden rounded-lg">
+                            <img alt="Certificado Placeholder"
+                                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuArJydwvYmsd7bpxfasKuCmFahOUJl3kMO6RmXiFLjuP7FcjhGc0wwG8imeBDrGiB_1fUpQIas0CldNaL61fQ9YkO9u2t4gP4JFD5gBvFlanqSn0UTQAPEy0MSIXJJwf2YB3kE_MbWjgNnZnzTyqI3PgIBUZ1ABr8WW2ZQAThkxRTSUqWSYmoqP8ZTKQrio-vusuQWd8Wix0za2BwOpWJggGo-JQX9ysSXWDn2RdVxZ-OVHmiQ58Ni1ZKUfwESQHFDCmJ12Mj2uDN0" />
+                            <div
+                                class="absolute inset-0 bg-black/70 flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <h3 class="text-white font-bold text-lg text-center">Spring Professional Certification
+                                </h3>
+                                <p class="text-white/80 text-sm">VMware</p>
+                                <a class="mt-4 text-primary hover:underline text-sm font-bold flex items-center gap-1"
+                                    href="#">
+                                    Ver Credencial <span class="material-symbols-outlined text-base">open_in_new</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="scroll-mt-20" id="contact">
+                    <h2
+                        class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 border-b border-white/10 mb-6">
+                        Contacto</h2>
+                    <div class="flex flex-col items-center gap-8 rounded-lg bg-white/5 p-8 text-center">
+                        <p class="text-white/80 max-w-md">¿Interesado en colaborar o tienes alguna pregunta? No dudes en
+                            contactarme. Estoy disponible para nuevas oportunidades y proyectos desafiantes.</p>
+                        <div class="flex items-center gap-6">
+                            <a class="text-white/80 hover:text-primary transition-colors" data-alt="GitHub profile link"
+                                href="#">
+                                <svg aria-hidden="true" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                                    <path clip-rule="evenodd"
+                                        d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <a class="text-white/80 hover:text-primary transition-colors"
+                                data-alt="LinkedIn profile link" href="#">
+                                <svg aria-hidden="true" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <a class="flex min-w-[84px] max-w-xs w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors"
+                            href="docs/Julian-Garcete-cv.pdf"
+                            download="Julian-Garcete-cv">
+                            <span class="truncate">Descargar CV</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="flex justify-center border-t border-solid border-white/10 py-6">
+            <div class="w-full max-w-5xl px-4 text-center">
+                <p class="text-sm text-white/60">© 2024 Alejandro Gómez. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
