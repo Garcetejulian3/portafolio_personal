@@ -112,22 +112,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="scroll-mt-20" id="about">
-                    <h2
-                        class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 border-b border-white/10 mb-6">
-                        Acerca de Mí</h2>
-                    <div class="flex p-4">
-                        <p class="text-white/80 text-base font-normal leading-relaxed">
-                            Soy un desarrollador Backend con sólida experiencia en la creación de aplicaciones
-                            eficientes utilizando Java y Spring Boot. Tengo un profundo conocimiento en el diseño y la
-                            gestión de bases de datos relacionales como MySQL y PostgreSQL. Mi conjunto de herramientas
-                            incluye Postman para pruebas de API, Docker para la contenedorización y Git para el control
-                            de versiones. Siempre estoy buscando proyectos desafiantes que me permitan crecer
-                            profesionalmente y aportar valor significativo.
-                        </p>
-                    </div>
-                </section>
-                <section class="scroll-mt-20" id="skills">
+                 <section class="scroll-mt-20" id="skills">
                     <h2
                         class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 border-b border-white/10 mb-6">
                         Habilidades</h2>
@@ -143,6 +128,7 @@
                             <h3 class="font-bold text-white">Frameworks</h3>
                             <ul class="flex flex-col gap-2">
                                 <li class="text-white/80">Spring Boot</li>
+                                <li class="text-white/80">Spring Security</li>
                                 <li class="text-white/80">Hibernate</li>
                             </ul>
                         </div>
@@ -159,16 +145,77 @@
                                 <li class="text-white/80">Git &amp; GitHub</li>
                                 <li class="text-white/80">Docker</li>
                                 <li class="text-white/80">Postman</li>
+                                <li class="text-white/80">JWT</li>
                             </ul>
                         </div>
                     </div>
                 </section>
+
+                <section class="scroll-mt-20" id="about">
+                    <h2
+                        class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 border-b border-white/10 mb-6">
+                        Acerca de Mí</h2>
+                    <div class="flex p-4">
+                        <p class="text-white/80 text-base font-normal leading-relaxed">
+                            Soy un desarrollador Backend con sólida experiencia en la creación de aplicaciones
+                            eficientes utilizando Java y Spring Boot. Tengo un profundo conocimiento en el diseño y la
+                            gestión de bases de datos relacionales como MySQL y PostgreSQL. Mi conjunto de herramientas
+                            incluye Postman para pruebas de API, Docker para la contenedorización y Git para el control
+                            de versiones. Siempre estoy buscando proyectos desafiantes que me permitan crecer
+                            profesionalmente y aportar valor significativo.
+                        </p>
+                    </div>
+                </section>
+               
+
                 <section class="scroll-mt-20" id="projects">
                     <h2
                         class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 border-b border-white/10 mb-6">
                         Proyectos</h2>
 
                     <div class="grid grid-cols-1 gap-6 p-4 md:grid-cols-2">
+
+                        <div
+                            class="flex flex-col gap-4 rounded-lg bg-white/5 p-6 transition-all hover:bg-white/10 hover:shadow-lg">
+                            <h3 class="text-xl font-bold text-white">PixelQuest Tasks, una aplicación web full-stack
+                            </h3>
+                            <p class="text-white/80 text-sm">PixelQuest Tasks, una aplicación web full-stack de
+                                gestión
+                                de tareas con estilo retro-gaming. Fue un proyecto donde trabajé con backend y
+                                frontend
+                                separados, integrando autenticación, seguridad y CRUD completo de tareas.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Java</span>
+                                <span
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Spring
+                                    Boot</span>
+                                <span
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Spring
+                                    Security-JWT</span>
+                                <span
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">MySQL</span>
+                                <span
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Postman</span>
+
+                                <span
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Html</span>
+                                <span class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">CSS
+                                    (Tailwind)</span>
+                                <span
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">JavaScript
+                                    Vanilla</span>
+
+                            </div>
+                            <div class="mt-auto flex items-center gap-4 pt-4">
+                                <a class="text-primary hover:underline text-sm font-bold flex items-center gap-1"
+                                    href="https://github.com/Garcetejulian3/PixelQuest-Tasks-Proyecto-Full-Stack-con-Spring-Boot-JS">GitHub
+                                    <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+                            </div>
+                        </div>
+
+
+
                         <div
                             class="flex flex-col gap-4 rounded-lg bg-white/5 p-6 transition-all hover:bg-white/10 hover:shadow-lg">
                             <h3 class="text-xl font-bold text-white">API de Gestión de ventas</h3>
@@ -246,11 +293,12 @@
                                 <span
                                     class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Java</span>
                                 <span
-                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Spring Boot</span>
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Spring
+                                    Boot</span>
                                 <span
                                     class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">MySQL</span>
                                 <span
-                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Postman</span>    
+                                    class="rounded-full bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Postman</span>
                             </div>
                             <div class="mt-auto flex items-center gap-4 pt-4">
                                 <a class="text-primary hover:underline text-sm font-bold flex items-center gap-1"
@@ -258,6 +306,13 @@
                                         class="material-symbols-outlined text-base">arrow_forward</span></a>
                             </div>
                         </div>
+
+
+                        <a class="flex min-w-[84px] max-w-xs w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors"
+                            href="proyectos.html">
+                            <span class="truncate">Proyectos con Demo</span>
+                        </a>
+
                     </div>
                 </section>
                 <section class="scroll-mt-20" id="certificates">
@@ -272,7 +327,8 @@
                                 src="img/Spring Boot - TodoCode.pdf.png" />
                             <div
                                 class="absolute inset-0 bg-black/70 flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <h3 class="text-white font-bold text-lg text-center">Desarrollo de APIs en Java con Spring Boot</h3>
+                                <h3 class="text-white font-bold text-lg text-center">Desarrollo de APIs en Java con
+                                    Spring Boot</h3>
                                 <p class="text-white/80 text-sm">todocodeacademy</p>
                                 <a class="mt-4 text-primary hover:underline text-sm font-bold flex items-center gap-1"
                                     href="https://todocodeacademy.com/certificate/spring-boot-sim/">
@@ -287,7 +343,8 @@
                                 src="img/BD Relacionales con MySQL - TodoCode.pdf.png" />
                             <div
                                 class="absolute inset-0 bg-black/70 flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <h3 class="text-white font-bold text-lg text-center">Introducción a las Bases de Datos Relacionales (Con MySQL) –
+                                <h3 class="text-white font-bold text-lg text-center">Introducción a las Bases de Datos
+                                    Relacionales (Con MySQL) –
                                     Associate</h3>
                                 <p class="text-white/80 text-sm">todocodeacademy</p>
                                 <a class="mt-4 text-primary hover:underline text-sm font-bold flex items-center gap-1"
@@ -330,7 +387,8 @@
                                 </svg>
                             </a>
                             <a class="text-white/80 hover:text-primary transition-colors"
-                                data-alt="LinkedIn profile link" href="https://www.linkedin.com/in/julian-garcete-685738370/">
+                                data-alt="LinkedIn profile link"
+                                href="https://www.linkedin.com/in/julian-garcete-685738370/">
                                 <svg aria-hidden="true" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
                                     <path
                                         d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
